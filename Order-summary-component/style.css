@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,800;9..144,900&family=Montserrat:wght@200;300;400;500&family=Red+Hat+Display:wght@300;400;500;900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  font-family: 'Red Hat Display', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("images/pattern-background-desktop.svg"), none;
+  background-color: #E0E8FF;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+}
+
+.bottom {
+  width: 100%;
+}
+
+.card > .bottom > .order h3 {
+  font-size: 1.5rem;
+  color: #2d3855;
+}
+
+.card > .bottom > .order p {
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  color: #979aa1;
+  font-size: 0.8rem;
+}
+
+.card > .bottom > .order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 16px 16px 16px;
+  gap: 16px;
+}
+
+.annual {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  background-color: #F8F9FE;
+  margin: 24px;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+
+.annual i {
+  background-color: rgb(229, 233, 245);
+  border-radius: 100px;
+  padding: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.annual > .price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.annual h6 {
+  font-size: 0.9rem;
+  padding-right: 48px;
+}
+
+.annual > .price p {
+  font-size: 0.8rem;
+}
+
+.change a {
+  font-weight: 500;
+  color: #382AE1;
+  font-size: 0.8rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 32px;
+  width: 80%;
+  justify-content: center;
+}
+
+.buttons > .pay {
+  border: none;
+  background-color: #382AE1;
+  padding: 16px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.buttons > .cancel {
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #e0e8ff00;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .annual {
+    width: 90%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 375px){
+    body {
+        
+        justify-content: center;
+        
+      }
+.card {
+
+
+margin: 24px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
