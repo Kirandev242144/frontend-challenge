@@ -15,6 +15,9 @@ body {
   margin: 0;
   background-image: url("images/pattern-background-desktop.svg"), none;
   background-color: #E0E8FF;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center -25%;
 }
 
 .card {
