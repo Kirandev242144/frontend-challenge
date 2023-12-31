@@ -37,14 +37,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
     background-color: white;
     width: 100%;
     align-items: center;
     margin-top: 128px;
    
-  
+   
 }
 .card {
 display: flex;
@@ -399,21 +397,4 @@ cursor: pointer;
       
 }
 
-  @media screen and (min-width: 600px) and (max-width: 1024px) {
-    .card {
-      display: flex;
-      flex-direction: row;
-      background-color: var(--white);
-      border-radius: 32px 16px 16px 32px ;
-      justify-content: center;
-      width: 100%;
-      align-items: center;
-      margin: 24px;
-      box-shadow: 5px 13px 28px 1px rgba(170,182,247,0.33);
-      -webkit-box-shadow: 5px 13px 28px 1px rgba(170,182,247,0.33);
-      -moz-box-shadow: 5px 13px 28px 1px rgba(170,182,247,0.33);
-      
-      
-      }
-    
-  }
+  
