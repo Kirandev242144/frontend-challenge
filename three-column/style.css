@@ -44,6 +44,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding-left: var(--spacing-md);
+    padding-bottom:var(--spacing-lg) ;
     width: 100%;
     height: auto;
   }
@@ -80,6 +81,7 @@
     font-family: 'Lexend Deca', sans-serif;
     color: white;
     font-weight: 300;
+    width: 80%;
   }
   
   button {
@@ -103,6 +105,11 @@
   }
   
   @media screen and (max-width: 600px) {
+    body{
+      min-height: 100vh ;
+      
+
+    }
     .container {
       display: flex;
       flex-direction: column;
@@ -112,12 +119,13 @@
       width: 100%;
       border-radius: 12px;
       overflow: hidden;
+      
     }
   
     .card1,
     .card2,
     .card3 {
-      padding-bottom: var(--spacing-md);
+      padding-bottom: var(--spacing-lg);
       padding-top: var(--spacing-md);
     }
   
@@ -128,6 +136,9 @@
       justify-content: center;
       height: auto;
       margin: var(--spacing-md);
+    }
+    .content p {
+      width: 90%;
     }
   }
   
