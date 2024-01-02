@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+
+}
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+  }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    background-color:  var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url('images/bg-pattern-top.svg');
+    transform: scaleX(-1) scaleY(-1);
+    transform: rotate(180deg);
+    
+
+  }
+
+  body::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url('images/bg-pattern-bottom.svg');
+    
+  }
+
+.card {
+background-color:white;
+border-radius: 16px;
+position: relative;
+
+
+
+}
+.top img {
+
+    border-radius: 16px 16px 0px 0px;
+
+
+
+}
+.profile {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transform: translateY(-48px);
+gap: 12px;
+
+}
+.profile img {
+border: 4px solid rgb(255, 255, 255);
+border-radius: 50%;
+
+
+
+}
+.profile span {
+
+color: var(--dark-grayish-blue);
+font-family: 'Kumbh Sans', sans-serif;
+font-weight: 400;
+padding-left: 8px;
+
+}
+.profile p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+
+
+}
+.profile h3 {
+
+font-family: 'Kumbh Sans', sans-serif;
+
+color: var(--very-dark-desaturated-blue);
+
+
+    
+}
+
+.bottom_details {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 48px;
+margin: 24px;
+font-family: 'Kumbh Sans', sans-serif;
+
+
+}
+.middle_line {
+border-top: 1px solid var(--dark-grayish-blue);
+opacity: 0.2;
+
+
+
+
+}
+.bottom_details h3 {
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+
+}
+.bottom_details span {
+font-size: 0.8rem;
+font-weight: 400;
+color: var(--dark-grayish-blue);
+
+
+}
