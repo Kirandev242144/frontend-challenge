@@ -47,13 +47,13 @@ body {
     width: 50%;
     height: 50%;
     background-image: url('images/bg-pattern-bottom.svg');
-    
+    z-index: 0;
   }
 
 .card {
 background-color:white;
 border-radius: 16px;
-position: relative;
+z-index: 1;
 
 
 
