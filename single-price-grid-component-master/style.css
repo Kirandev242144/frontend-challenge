@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+
+}
+:root {
+    
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+  
+    
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+  }
+
+body {
+font-size: 16px;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+background-color: #E6EFF6;
+
+
+
+
+}
+
+.grid {
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+   max-width: 800px;
+    margin: 48px;
+    padding: 16px;
+
+
+
+}
+.top {
+    grid-column: span 2; 
+    padding: 64px;
+    background-color: white;
+}
+.bottom_left {
+    grid-column: span 1;
+   background-color: var(--cyan);
+   padding: 64px;
+}
+.bottom_right {
+
+    grid-column: span 1;
+    background-color: #49BEBD;
+    padding: 64px;
+}
+li {
+list-style: none;
+
+
+}
+.heading h1 {
+color: var(--cyan);
+font-family: 'Karla', sans-serif;
+
+
+
+}
+.subtitle h3 {
+
+font-family: 'Karla', sans-serif;
+color: var(--bright-yellow);
+
+}
+.p p {
+font-family: 'Karla', sans-serif;
+color: var(--grayish-blue);
+
+
+
+}
+.top {
+display: flex;
+flex-direction: column;
+gap: 24px;
+
+
+
+}
+
+.Monthly_Subscription {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 1.1rem;
+    padding-bottom: 12px;
+   }
+
+
+
+   .price h1 {
+
+   color: white;
+   font-family: 'Karla', sans-serif;
+   font-weight: 700;
+   padding-bottom: 12px;
+
+   }
+
+   .price h1 span {
+   color: var(--light-gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+
+   }
+   .full_access p {
+
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-bottom: 24px;
+
+
+
+   }
+.button button{
+padding: 16px 24px 16px 24px;
+background-color: var(--bright-yellow);
+width: 100%;
+border: none;
+color: white;
+font-family: 'Karla', sans-serif;
+font-weight: 700;
+font-size: 1rem;
+-webkit-box-shadow: 10px 10px 47px -7px rgba(0,0,0,0.43);
+-moz-box-shadow: 10px 10px 47px -7px rgba(0,0,0,0.43);
+box-shadow: 10px 10px 47px -7px rgba(0,0,0,0.43);
+}
+
+.why_us  {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    padding-bottom: 24px;
+
+
+}
+ul li {
+    color: rgb(228, 228, 228);
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+
+
+
+    .top {
+        grid-column: span 2; 
+        padding: 64px;
+        background-color: white;
+    }
+    .bottom_left {
+        grid-column: span 2;
+       background-color: var(--cyan);
+       padding: 64px;
+      
+    }
+    .bottom_right {
+    
+        grid-column: span 2;
+        background-color: #4ABEBD;
+        padding: 64px;
+    }
+
+
+
+    .grid {
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr; 
+           max-width: 800px;
+           margin: 0px;
+            padding: 16px;
+        
+        
+        
+        }
+
+       .Monthly_Subscription {
+         margin-bottom: 48px;
+         
+
+
+       }
+
+
+
+
+
+
+}
