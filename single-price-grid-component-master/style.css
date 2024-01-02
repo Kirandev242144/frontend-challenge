@@ -37,17 +37,19 @@ display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr; 
    max-width: 800px;
-    margin: 48px;
+    margin: 24px;
     padding: 16px;
 
 
 
 }
 .top {
-    grid-column: span 2; 
-    padding: 64px;
-    background-color: white;
+grid-column: span 2; 
+  padding: 64px 48px 64px 64px;
+  background-color: white;
+  height: auto;
 }
+
 .bottom_left {
     grid-column: span 1;
    background-color: var(--cyan);
@@ -203,7 +205,11 @@ ul li {
        }
 
 
-
+       .top {
+        grid-column: span 2; 
+        padding: 24px 24px px 64px;
+        background-color: white;
+    }
 
 
 
