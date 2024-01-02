@@ -23,32 +23,15 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 16px;
+    background-color: var(--dark-cyan);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   }
 
-  body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url('images/bg-pattern-top.svg');
-    transform: scaleX(-1) scaleY(-1);
-    transform: rotate(180deg);
-    
+ 
 
-  }
-
-  body::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url('images/bg-pattern-bottom.svg');
-    z-index: 0;
-  }
+  
 
 .card {
 background-color:white;
