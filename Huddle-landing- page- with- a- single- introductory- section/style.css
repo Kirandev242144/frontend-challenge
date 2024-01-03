@@ -30,7 +30,7 @@ body {
     margin: 4rem;
     width: 100%;
     max-width: calc(100% - 8rem);
-    gap: 48px;
+    gap: 32px;
 
 }
 
@@ -51,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem 8rem 4rem 4rem;
+    margin: auto;
     gap: 48px;
 }
 
@@ -116,6 +116,8 @@ body {
     flex-direction: row;
     justify-content: end;
     gap: 16px;
+    margin-top: 48px;
+    
 }
 
 .social_icons i {
