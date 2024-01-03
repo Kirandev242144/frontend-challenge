@@ -30,7 +30,7 @@ body {
     margin: 4rem;
     width: 100%;
     max-width: calc(100% - 8rem);
-
+    gap: 48px;
 
 }
 
@@ -194,7 +194,7 @@ body {
         width: 100%;
         overflow-x: hidden; 
         
-        width: 100%; 
+        
         
     }
 
@@ -218,15 +218,15 @@ body {
     }
 
     .right h1 {
-        width: 100%;
+        width: 90%;
         font-size: 2.0rem;
-        text-align: right;
+        
         text-align: center;
     }
 
     .right p {
-        width: 80%;
-        text-align: left;
+        width: 90%;
+        
         text-align: center;
     }
 
