@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+
+
+    width: 100%;
+
+    background-image: url(images/bg-desktop.svg);
+    background-color: var(--violet);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+    width: 100%;
+    max-width: calc(100% - 8rem);
+
+
+}
+
+.left {
+    width: 100%;
+
+
+}
+
+.left img {
+
+    width: 100%;
+
+}
+
+.right {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 8rem 4rem 4rem;
+    gap: 48px;
+}
+
+.right h1 {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2.5rem;
+
+}
+
+.right p {
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    width: 80%;
+}
+
+.top {
+    height: 52px;
+    margin: 4rem;
+
+
+}
+
+.button {
+    padding: 18px 64px 18px 64px;
+    width: fit-content;
+    border-radius: 2rem;
+    border: none;
+    color: var(--violet);
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 1px 10px 46px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 10px 46px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 10px 46px -7px rgba(0, 0, 0, 0.75);
+
+}
+
+.navbar img {
+    width: 12rem;
+
+
+
+
+}
+
+.down {
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.social_icons {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 16px;
+}
+
+.social_icons i {
+    padding: 8px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden; 
+        
+        width: 100%; 
+        
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        
+        max-width: calc(100% - 8rem);
+    }
+
+    .left img {
+        width: 80%;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 2rem 0rem 0rem;
+        gap: 48px;
+        width: 100%;
+    }
+
+    .right h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right p {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 400;
+        width: 80%;
+        text-align: center;
+    }
+
+    .social_icons {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-color: var(--violet);
+        width: 100%;
+        overflow-x: hidden; 
+        
+        width: 100%; 
+        
+    }
+
+    .main {
+        margin: 4rem;
+        max-width: calc(100% - 8rem);
+        flex-direction: row;
+    }
+
+    .left img {
+        width: 80%;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 4rem 4rem 4rem;
+       width: 100%;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .right h1 {
+        width: 100%;
+        font-size: 2.0rem;
+        text-align: right;
+        text-align: center;
+    }
+
+    .right p {
+        width: 80%;
+        text-align: left;
+        text-align: center;
+    }
+
+    .social_icons {
+        justify-content: center;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        width: 100%;
+        max-width: calc(100% - 1rem);
+
+
+    }
+    .navbar {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    
+    
+    }
+}
