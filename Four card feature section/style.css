@@ -116,7 +116,7 @@ margin-top: 32px;
   .card1, .card2, .card3, .card4 {
   background-color: rgb(255, 255, 255);
   margin: 16px;
-  width: 300px;
+  max-width: 320px;
   height: auto;
   border-radius: 4px;
   -webkit-box-shadow: 3px 10px 38px -15px rgba(117,115,117,1);
@@ -317,7 +317,7 @@ border-top: 3px solid var(--primary-cyan);
           .card1, .card2, .card3, .card4 {
           background-color: rgb(255, 255, 255);
           margin: 16px;
-          width: 300px;
+          width: 320px;
           height: auto;
           border-radius: 4px;
           -webkit-box-shadow: 3px 10px 38px -15px rgba(117,115,117,1);
