@@ -49,7 +49,7 @@ body {
 body::before {
     content: '';
     position: absolute;
-    width: 28%; 
+    width: 21%; 
     height: 90vh; 
     background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     border-radius: 0vh 0vh 50vh 50vh; 
