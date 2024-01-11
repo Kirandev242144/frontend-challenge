@@ -136,6 +136,115 @@ body {
 
 }
 
+@media screen and (max-width: 1024px) {
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 132px;
+        z-index: 1;
+       
+        
+    }
+    
+    .flex_hero {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
+    
+    
+    }
+    
+    .flex_hero img {
+        width: 125px;
+        height: auto;
+    
+    
+    
+    }
+    
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 48px;
+        padding-right: 48px;
+    
+    }
+    
+    .hero_content h1 {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 42px;
+        font-weight: 500;
+        color: #4C545C;
+        text-align: center;
+    
+    
+    }
+    
+    .hero_content p {
+    
+        text-align: center;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #9EABB2;
+    
+    }
+    
+    .hero_cta {
+    
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-left: 48px;
+        padding-right: 48px;
+    
+    }
+    
+    .hero_cta>#primary {
+        padding: 13px 33px 13px 33px;
+        border-radius: 16px;
+        border: none;
+        background-color: #26BBA4;
+        color: white;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    
+    }
+    
+    .hero_cta>#Secondary {
+        padding: 13px 33px 13px 33px;
+        border-radius: 16px;
+        border: none;
+        background-color: #6174FF;
+        color: white;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 .feature_1 {
     display: flex;
     flex-direction: column;
@@ -455,7 +564,7 @@ text-align: center;
     align-items: center;
     margin-top: 80px;
     gap: 113px;
-    
+   
 
 }
 
@@ -567,7 +676,73 @@ text-align: center;
 
 
 
+@media screen and (max-width: 600px) {
 
+
+
+    .feature_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        gap: 113px;
+        
+    
+    }
+    
+    
+    
+    .feature_2 h1 {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        color: #4C545C;
+        text-align: center;
+    
+    }
+    
+    .top_content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+    
+    
+    }
+    
+    .feature_2>.top_content p {
+    
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #9EABB2;
+        text-align: center;
+        max-width: 70%;
+    
+    }
+    
+    .feature_2>.image_bottom img {
+    
+        max-width: 100%;
+        height: auto;
+
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+ }
 
 
 
@@ -1145,7 +1320,7 @@ width: auto;
         gap: 94px;
         align-items: center;
         justify-content: center;
-        padding: 48px;
+        
         
         }
         .partners_flex img {
