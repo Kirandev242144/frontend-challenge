@@ -218,6 +218,8 @@ body {
         font-family: 'Bai Jamjuree', sans-serif;
         font-weight: 500;
         font-size: 18px;
+        width: 100%;
+        
     
     }
     
@@ -1075,7 +1077,7 @@ justify-content: center;
         justify-content: center;
         align-items: center;
         
-        margin-bottom: 118px;
+        margin-bottom: 16px;
         width: 100%;
     
     }
@@ -1352,7 +1354,8 @@ width: auto;
 display: flex;
 flex-direction: column;
 gap: 48px;
-margin-top: 150px;
+margin-top: 48px;
+margin-bottom: 64px;
 
 
 }
@@ -1419,81 +1422,199 @@ gap: 16px;
 
 }
 
+@media screen and (max-width: 1024px) { 
+
+
+
+    .download_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        
+        }
+
+
+        .download_section {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            margin-top: 16px;
+            
+            
+            }
+
+
+
+
+
+
+}
+
 .footer {
-   
-    background: #02ecec;
-    margin-top: 128px;
-    
-    
-}
-.footer_wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5rem;
-    box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: auto;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    gap: 5rem;
-
-}
-.left p{
-    color: #4C545C;
-
-    font-family: Bai Jamjuree;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
-    letter-spacing: 0.135px;
-    
-    }
-.footer_logo img {
-
-    width: 55px;
-    height: 55px;
-    flex-shrink: 0;
-
-}
-.footer_nav p {
-width: 100%;
-
-}
-.footer_nav {
-
 display: flex;
 flex-direction: row;
-gap: 56px;
-
+align-items: center;
+justify-content: center;
+padding-top: 52px;
+padding-bottom: 52px;
+width: 100%;
+background-color: #EDEEEE;
+height: auto;
+}
+.footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 .ft1,.ft2,.ft3 {
 display: flex;
 flex-direction: column;
-gap: 12px;
+gap: 16px;
+color: #4C545C;
+font-family: 'Bai Jamjuree', sans-serif;
+font-weight: 500;
+font-size: 16px;
 
 
 }
-.media_flex {
+
+
+
+
+.left {
+
 display: flex;
 flex-direction: row;
-justify-content: center;
+gap:52px;
 align-items: center;
+
+
+}
+
+.footer_logo img {
+display: block;
+max-width: 100%;
+height: 55px;
+
+
+    
+}
+.footer_nav {
+display: flex;
+flex-direction: row;
+gap: 48px;
+
+
+}
+
+.media_flex {
+
+display: flex;
+flex-direction: row;
 gap: 16px;
 
 
 }
+
+@media screen and (max-width: 1024px) {
+
+
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 52px;
+        padding-bottom: 52px;
+        width: 100%;
+        background-color: #EDEEEE;
+        height: auto;
+        }
+        .footer_wrapper {
+            display: flex;
+            flex-direction:column;
+            gap: 48px;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        .ft1,.ft2,.ft3 {
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+        color: #4C545C;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        width: 100%;
+        
+        }
+        
+        
+        
+        
+        .left {
+        
+        display: flex;
+        flex-direction: column;
+        gap:52px;
+        align-items: center;
+        
+        
+        }
+        
+        .footer_logo img {
+        display: block;
+        width: 100%;
+        
+        
+        
+            
+        }
+        .footer_nav {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        width: 100%;
+        
+        }
+        
+        
+        .media_flex {
+        
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
