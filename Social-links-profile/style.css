@@ -113,12 +113,14 @@ text-align: center;
     color: #fff;
     background-color:var(--grey); /* Use your desired color */
     border-radius: 5px;
-    transition: background-color 0.3s ease;
     width: 100%;
+    transition: background-color 0.9s ease, transform 2s ease-in;
   }
   .button:hover{
-
-
+  background-color: var(--off-black);
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
 
 
 
