@@ -140,7 +140,7 @@ text-align: center;
         .links a {
         align-items: center;
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 1rem;
         
         }
         
@@ -175,14 +175,14 @@ text-align: center;
             .name_loc h2 {
             color: var(--white);
             user-select: none;
-            font-size: 1rem;
+            font-size: 1.8rem;
             text-align: center;
             }
             .name_loc p {
             color: var(--primary-green);
             font-weight: 700;
             user-select: none;
-            font-size: 0.8rem;
+            font-size: 1rem;
             text-align: center;
             }
             .quote {
