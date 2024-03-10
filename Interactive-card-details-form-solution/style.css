@@ -20,8 +20,6 @@
 body {
   height: 100vh;
   width: 100%;
-  background-image: url("images/bg-main-desktop.png");
-  background-repeat: no-repeat;
   font-family: "Space Grotesk", sans-serif;
   display: flex;
   flex-direction: column;
@@ -32,32 +30,165 @@ body {
 
 /* Reset default styles */
 .container {
-  margin: 0 auto;
-  padding: 20px;
-  display: flex; /* Added */
-  flex-direction: row; /* Added */
-  gap: 52px;
-  align-items: center;
+  width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 258px;
+    align-items: center;
 }
 
-.cards {
-  width: 50%;
+.card {
   display: flex;
-  flex-direction: column; /* Adjusted */
+  flex-direction: column;
   gap: 48px;
-  margin-bottom: 20px;
-  align-items: center;
-  justify-content: space-between; /* Added */
+  height: 100%;
+  background-image: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+
 }
 
-.top-card {
-  align-self: flex-start; /* Adjusted */
+.front-card {
+
+  transform: translate(25%, 10%);
+  background-image: url(images/bg-card-front.png);
+  justify-content: space-between;
+  width: 28rem;
+  height: 16rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.8rem;
+}
+.log img {
+
+width: 72px;
+  
+}
+.card__info{
+display: flex;
+flex-direction: column;
+gap: 24px;
+width: 100%;
+
+
+}
+.name_exp{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 100%;
+justify-content: space-between;
+}
+.exp{
+
+
+  display: flex;
+  flex-direction: row;
 }
 
-.bottom-card {
-  align-self: flex-end; /* Adjusted */
-  position: relative;
+
+.back-card {
+
+  transform: translate(25%, 10%);
+  background-image: url(images/bg-card-back.png);
+  width: 28rem;
+  height: 16rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 2rem 1rem;
+align-items: flex-end;
+justify-content: center;
+
 }
+.cvnumber {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .payment-form {
   width: 40%;
@@ -161,61 +292,7 @@ button[type=submit]:hover {
   text-decoration: underline;
 }
 
-.logo {
-  width: 78px;
-}
 
-.card-data {
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  color: white;
-}
-
-.details {
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-  justify-content: space-between;
-}
-
-.exp {
-  display: flex;
-  gap: 24px;
-}
-
-.content {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  gap: 24px;
-}
-
-.card-number h2 {
-  letter-spacing: 4px;
-}
-
-.down-content {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  right: 12%;
-  color: var(--light-grayish-violet);
-}
-
-.bottom-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#cardname {
-  font-weight: 400;
-  letter-spacing: 4px;
-}
 
 .errorlabel {
   display: flex;
@@ -231,250 +308,3 @@ button[type=submit]:hover {
 
 
 /* Media Query for Mobile Devices */
-@media only screen and (max-width: 600px) {
-
-  body {
-    height: 100%;
-    width: 100%;
-    background-image: url("images/bg-main-mobile.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-family: "Space Grotesk", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-  }
-  
-  /* Reset default styles */
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex; /* Added */
-    flex-direction: column; /* Added */
-    gap: 35rem;
-    align-items: center;
-    justify-items: center;
-    background-color: red;
-  }
-  
-  .cards {
-    display: flex;
-    flex-direction: column; /* Adjusted */
-    gap: 8px;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-.top-card {
-z-index: 1;
-position: absolute;
-transform: translateX(center);
-
-  }
-  #top-card,#down-card {
-
-max-width: 100%;
-
-  }
-  
-  .bottom-card {
-  transform: translateY(70%);
-    position: absolute;
-
-  }
-  
-  .payment-form {
-    width: 100%;
-  }
-  
-  .payment-form form {
-    padding: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 20px;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-family: "Space Grotesk", sans-serif;
-    color: var(--very-dark-violet);
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-  }
-  
-  input::-moz-placeholder {
-    color: var(--light-grayish-violet);
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-  }
-  
-  input::placeholder {
-    color: var(--light-grayish-violet);
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 16px;
-    border: 1px solid var(--light-grayish-violet);
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .expiry-date-cvc-group {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .mmyy {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  
-  .expiry-date-cvc-group .input-group {
-    width: 48%;
-  }
-  
-  .expiry-date-cvc-group .input-group .mmyy {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .expiry-date-cvc-group .input-group .exp input {
-    width: 45%;
-  }
-  
-  button[type=submit] {
-    display: block;
-    width: 100%;
-    padding: 24px;
-    background-color: var(--very-dark-violet);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button[type=submit]:hover {
-    background-color: var(--primary-gradient-end);
-  }
-  
-  /* Attribution */
-  .attribution {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-  }
-  
-  .attribution a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .attribution a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo {
-    width: 64px;
-  }
-  
-  .card-data {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    color: white;
-  }
-  
-  .details {
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-    justify-content: space-between;
-  }
-  
-  .exp {
-    display: flex;
-    gap: 24px;
-  }
-  
-  .content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    font-size: 0.8REM;
-    justify-content: space-around;
-    /* width: 100%; */
-    /* height: 100%; */
-    
-  }
-  
-  .card-number h2 {
-    letter-spacing: 4px;
-    font-size: 1REM;
-  }
-  
-  .down-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 12%;
-    color: var(--light-grayish-violet);
-  }
-  
-  .bottom-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #cardname {
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-size: 0.8rem;
-  }
-  
-  .errorlabel {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
-    color: red;
-  }
-  
-  .disabled-button {
-    cursor: crosshair;
-  }
-
-
-
-
-  .input-group label {
-    
-font-size: 0.8rem;
-
-}
-#expdate {
-
-
-font-size: 0.6rem;
-  
-}
-
-}
