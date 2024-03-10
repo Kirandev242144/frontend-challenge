@@ -254,7 +254,7 @@ button[type=submit]:hover {
     padding: 20px;
     display: flex; /* Added */
     flex-direction: column; /* Added */
-    gap: 20rem;
+    gap: 27rem;
     align-items: center;
     justify-items: center;
   }
