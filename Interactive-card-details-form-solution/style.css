@@ -257,6 +257,7 @@ button[type=submit]:hover {
     gap: 35rem;
     align-items: center;
     justify-items: center;
+    background-color: red;
   }
   
   .cards {
