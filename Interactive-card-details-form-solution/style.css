@@ -254,7 +254,7 @@ button[type=submit]:hover {
     padding: 20px;
     display: flex; /* Added */
     flex-direction: column; /* Added */
-    gap: 29rem;
+    gap: 20rem;
     align-items: center;
     justify-items: center;
   }
@@ -272,6 +272,7 @@ button[type=submit]:hover {
 z-index: 1;
 position: absolute;
 transform: translateX(center);
+width: 100%;
 
   }
   #top-card,#down-card {
@@ -419,7 +420,7 @@ max-width: 100%;
     padding: 24px;
     font-size: 0.8REM;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 2rem;
   }
   
   .card-number h2 {
