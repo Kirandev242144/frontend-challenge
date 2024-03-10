@@ -1,103 +1,310 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Meta tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Link to favicon and CSS stylesheet -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- Title of the webpage -->
-  <title>Frontend Mentor | Interactive card details form</title>
-</head>
-<body>
-  <!-- Container for the entire content -->
-  <div class="container">
-    <!-- Section for displaying card images -->
-    <section class="cards">
-      <div class="top-card">
-        <div class="content">
-          <img src="images/card-logo.svg" alt="" class="logo">
-          <div class="card-data">
-            <div class="card-number"><h2 id="imgcardnumber">0000 0000 0000 0000</h2></div>
-           <div class="details">
-            <div class="name"><h4 id="cardname">JANE APPLESEED</h4></div>
-            <div class="exp">
-              <div id="date">00</div>
-              <div id="sap">/</div>
-              <div id="yy">00</div>
-            </div>
-           </div>
-          </div>
-          
-        </div>
-        <img src="images/bg-card-front.png" id="top-card" alt="Front of card" srcset="">
-      </div>
-      <div class="bottom-card">
-        <div class="down-content">
-          <div class="cvnumber">
-            <p>000</p>
-          </div>
-        </div>
-        <img src="images/bg-card-back.png" alt="Back of card" srcset="">
-      </div>
-    </section>
-    
-    <!-- Section for the payment form -->
-    <section class="payment-form">
-      <form>
-        <!-- Input field for cardholder name -->
-        <div class="input-group name">
-          <label for="cardholder-name">CARDHOLDER NAME</label>
-          <input type="text" id="cardholder-name" name="cardholder-name" maxlength="21" placeholder="e.g. John Doe" required>
-          <p id="nameerror"></p>
-        </div>
-        
-        <!-- Input field for card number -->
-        <div class="input-group">
-          <label for="card-number">CARD NUMBER</label>
-          <input type="text" id="card-number" pattern="[0-9]*" placeholder="0000 0000 0000 0000" inputmode="numeric" maxlength="19"  required>
-          <p id="numbererror"></p>
-        </div>
-        
-        <!-- Input fields for expiration date and CVC -->
-        <div class="expiry-date-cvc-group input-group">
-          <div class="expiry-month-group input-group">
-            <div class="mmyy">
-              <label id="expdate" for="expiry-month">EXP. DATE (MM/YY)</label>
-              <div class="exp">
-                <input type="number" id="expiry-month" name="expiry-month" placeholder="MM" pattern="(0[1-9]|1[0-2]|[1-9]\d*)" maxlength="2" required>
-                <input type="number" id="expiry-year" name="expiry-year" placeholder="YY" pattern="[0-9]{2}" maxlength="2" required>
-                
-              </div>
-              
-            </div>
-          </div>
-          
-          <div class="cvc-group input-group">
-            <label id="cvc" for="cvc">CVC</label>
-            <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" pattern="[0-9]{3,4}" required>
-          </div>
-        </div>
-        <div class="errorlabel">
-          <p id="montherror"></p>
-          <p id="yearerror"></p>
-        </div>
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+:root {
+  /* Primary colors */
+  --primary-gradient-start: hsl(249, 99%, 64%);
+  --primary-gradient-end: hsl(278, 94%, 30%);
+  --primary-red: hsl(0, 100%, 66%);
+  /* Neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
 
-        <!-- Submit button -->
-        <button id="confirm" type="submit">Confirm</button>
-      </form>
-    </section>
-  </div>
-  
-  <!-- Attribution section -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Kiran dev</a>.
-  </div>
-</body>
-<script src="app.js" defer></script>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-</html>
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Reset default styles */
+.container {
+  width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 258px;
+    align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  height: 100%;
+  background-image: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+
+}
+
+.front-card {
+
+  transform: translate(25%, 10%);
+  background-image: url(images/bg-card-front.png);
+  justify-content: space-between;
+  width: 28rem;
+  height: 16rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.8rem;
+}
+.log img {
+
+width: 72px;
+  
+}
+.card__info{
+display: flex;
+flex-direction: column;
+gap: 24px;
+width: 100%;
+
+
+}
+.name_exp{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 100%;
+justify-content: space-between;
+}
+.exp{
+
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+.back-card {
+
+  transform: translate(25%, 10%);
+  background-image: url(images/bg-card-back.png);
+  width: 28rem;
+  height: 16rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 2rem 1rem;
+align-items: flex-end;
+justify-content: center;
+
+}
+.cvnumber {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payment-form {
+  width: 40%;
+}
+
+.payment-form form {
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--very-dark-violet);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+input::-moz-placeholder {
+  color: var(--light-grayish-violet);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+input::placeholder {
+  color: var(--light-grayish-violet);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--light-grayish-violet);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.expiry-date-cvc-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mmyy {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.expiry-date-cvc-group .input-group {
+  width: 48%;
+}
+
+.expiry-date-cvc-group .input-group .mmyy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiry-date-cvc-group .input-group .exp input {
+  width: 45%;
+}
+
+button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 24px;
+  background-color: var(--very-dark-violet);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: var(--primary-gradient-end);
+}
+
+/* Attribution */
+.attribution {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.attribution a {
+  color: #333;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+
+
+.errorlabel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  color: red;
+}
+
+.disabled-button {
+  cursor: crosshair;
+}
+
+
+
+/* Media Query for Mobile Devices */
