@@ -420,7 +420,7 @@ max-width: 100%;
     padding: 24px;
     font-size: 0.8REM;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .card-number h2 {
