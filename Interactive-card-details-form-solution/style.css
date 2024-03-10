@@ -389,7 +389,7 @@ max-width: 100%;
   }
   
   .logo {
-    width: 52px;
+    width: 64px;
   }
   
   .card-data {
@@ -418,12 +418,13 @@ max-width: 100%;
     flex-direction: column;
     padding: 24px;
     font-size: 0.8REM;
-    
+    justify-content: space-between;
+    gap: 5rem;
   }
   
   .card-number h2 {
     letter-spacing: 4px;
-    font-size: 0.8REM;
+    font-size: 1REM;
   }
   
   .down-content {
