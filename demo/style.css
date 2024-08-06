@@ -1,0 +1,226 @@
+/* Template: QuanTech
+Author: Modina Theme
+Author URI: https://themeforest.net/user/modinatheme/
+Description: IT Solution & Technology HTML  Template
+Version: 1.2.0 */
+/* =================================
+|***    Table of contents:   ***|
+=================================
+
+Main Style file-> assets/css/style.css 
+
+All the SCSS File in SCSS Folder of Assets Folder. You can read the doc file also for better understand.
+
+// BASIC
+@import 'basic';
+
+// MIXIN
+@import 'variables';
+
+// TYPOGRAPHY
+@import 'typography';
+
+// MIX
+@import 'mix';
+
+// HELPER
+@import 'helper';
+
+// ICON FONTS
+@import 'icon';
+
+// ANIMATION
+@import 'animation';
+
+// Button 
+@import 'btn';
+
+// Colors 
+@import 'colors';
+
+// Preloader 
+@import 'preloader';
+
+/* ----------------------------------
+    Template Section Styles
+ ------------------------------------ */
+/* // Menu - Header Section 
+ @import 'header';
+ 
+ // Hero Slide - Section 
+ @import 'hero';
+ 
+ // Section Title - Heading 
+ @import 'section';
+ 
+ // About - Section 
+ @import 'about';
+ 
+ // Features - Section 
+ @import 'features';
+ 
+ // services - Section 
+ @import 'services';
+ 
+ // testimonial - Section 
+ @import 'testimonial';
+ 
+ // Portfolio - Cases - Section 
+ @import 'project';
+ 
+ // Price Table - Section 
+ @import 'price';
+ 
+ // Call To Action - Section 
+ @import 'cta';
+ 
+ // Content Block - Section 
+ @import 'contentblock';
+ 
+ // team - Section 
+ @import 'team';
+ 
+ // funfact - Section 
+ @import 'funfact';
+ 
+ // FAQ - Section 
+ @import 'faq';
+ 
+ // Blog - Section 
+ @import 'blog';
+ 
+ // Contact Us - Section 
+ @import 'contact';
+ 
+ // footer - Section 
+ @import 'footer';n facts */
+.image_1 {
+    position: relative;
+    background-image: url('1st_iamge.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    /* Adjust based on your layout */
+    height: 300px;
+
+    /* Adjust based on your layout */
+}
+
+.bacl_index {
+    z-index: -99;
+}
+
+.preloader .animation-preloader .txt-loading .letters-loading {
+    color: #ff0000;
+}
+
+.preloader p {
+    color: white;
+}
+
+.third_card {
+    position: relative;
+    background-image: url('2nd_image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    /* Adjust based on your layout */
+    height: 300px;
+
+    /* Adjust based on your layout */
+}
+
+.card_p {
+    color: #ffffff;
+}
+
+.second_card {
+    position: relative;
+    background-image: url('2nd_image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    /* Adjust based on your layout */
+    height: 300px;
+
+    /* Adjust based on your layout */
+}
+
+.third_image {
+}
+
+.third_image {
+    position: relative;
+    background-image: url('home-theater-acoustics-7%201.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    /* Adjust based on your layout */
+    height: 300px;
+
+    /* Adjust based on your layout */
+}
+
+#third_image_p {
+}
+
+.fourth_image {
+    position: relative;
+    background-image: url('Auditorium-AV-Solutions%201.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    /* Adjust based on your layout */
+    height: 300px;
+
+    /* Adjust based on your layout */
+}
+
+#fourth_image_p {
+}
+
+.specialists_in {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.preloader .animation-preloader .spinner,
+.pg-node-id-384,
+.pg-main-cs-8 {
+    -webkit-animation: spinner 1s infinite linear;
+    animation: spinner 1s infinite linear;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    border-top-color: #ffffff;
+    height: 9em;
+    margin: 0 auto 3.5em auto;
+    width: 9em;
+}
+
+.first_ser {
+    background-image: url('Auditorium-AV-Solutions%201.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: inherit;
+}
+
+@media (min-width:300px) and (max-width:399px) {
+    .acoustics {
+    }
+
+    .acoustics {
+        font-size: 16px;
+    }
+}
+
+.checked-list li::before {
+    color: red;
+}
+
+
+
