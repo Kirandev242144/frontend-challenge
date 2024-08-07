@@ -3084,7 +3084,7 @@ nav .breadcrumb li {
 }
 
 .preloader .animation-preloader .txt-loading .letters-loading {
-    color: #5f2dee;
+    color: red;
     position: relative;
 }
 
