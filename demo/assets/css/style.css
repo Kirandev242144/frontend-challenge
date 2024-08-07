@@ -3126,7 +3126,7 @@ nav .breadcrumb li {
 .preloader .animation-preloader .txt-loading .letters-loading::before {
     -webkit-animation: letters-loading 4s infinite;
     animation: letters-loading 4s infinite;
-    color: #5f2dee;
+    color: red;
     content: attr(data-text-preloader);
     left: 0;
     opacity: 0;
