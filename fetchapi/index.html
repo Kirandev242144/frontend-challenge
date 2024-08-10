@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+
+</head>
+
+
+<body>
+  
+  <div class="search">
+    <input type="text" name="" id="city_input" placeholder="Enter City Name">
+
+
+  </div>
+  <div class="weather_card">
+    
+    
+    <div class="content">
+      <div id="top">
+        <h3 id="city_name">Hong Kong</h3>
+        <div class="date">
+          <p id="date"></p>
+        </div>
+
+      </div>
+      <div class="middle">
+        <div class="temperature">
+          <span class="value" id="tmp_value">25</span>
+          <span class="unit">°C</span>
+        </div>
+        <img src="" id="wimage" alt="img">
+        <div id="lottieContainer" style="width: 100px; height: 100px;"></div>
+
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <i class="fas fa-cloud-moon-rain"></i>
+          <p id="humidity">2% <span id="hum_des">Percipitation</span></p>
+        </div>
+
+        <div class="right">
+          <i class="fas fa-wind"></i>
+          <p id="wind_speed"> <span></span></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
